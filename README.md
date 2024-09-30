@@ -31,10 +31,16 @@ A project to implement dynamic pricing strategies for ride-sharing platforms usi
    pip install -r requirements.txt
    ```
 
-3. Train the model & start the application:
+3. Train the model:
 ```bash
 python main.py
 ```
+
+4. Build and run the Docker container:
+```bash
+docker build -t dynamic-pricing .
+docker run -p 8000:8000 dynamic-pricing
+```   
 
 ## Hyperparameter Tuning
 
