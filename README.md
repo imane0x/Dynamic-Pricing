@@ -12,7 +12,7 @@ A project to implement dynamic pricing strategies for ride-sharing platforms usi
 
 ## Data
 
-- **Source:** [Kaggle](https://www.kaggle.com/datasets)
+- **Source:** [Kaggle](https://www.kaggle.com/datasets/arashnic/dynamic-pricing-dataset)
 - **Key Features:**
   - Riders and drivers count
   - Location type (urban, suburban, rural)
