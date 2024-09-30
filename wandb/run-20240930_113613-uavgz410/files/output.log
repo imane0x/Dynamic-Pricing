@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "c:\Users\imane\OneDrive\Documents\dynamic_pricing\src\main.py", line 54, in <module>
+    main()
+  File "c:\Users\imane\OneDrive\Documents\dynamic_pricing\src\main.py", line 24, in main
+    demand_elasticity,pipeline, _ = estimate_demand_elasticity(data)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\imane\OneDrive\Documents\dynamic_pricing\src\dynamic_pricing.py", line 73, in estimate_demand_elasticity
+    estimated_demand_elasticity,pipeline, demand_summary = estimate_elasticity(data, demand_features, demand_target, 'demand')
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: estimate_elasticity() takes 3 positional arguments but 4 were given

@@ -1,0 +1,32 @@
+2024-09-30 00:22:28,686 INFO    MainThread:15740 [wandb_setup.py:_flush():79] Current SDK version is 0.18.2
+2024-09-30 00:22:28,686 INFO    MainThread:15740 [wandb_setup.py:_flush():79] Configure stats pid to 15740
+2024-09-30 00:22:28,686 INFO    MainThread:15740 [wandb_setup.py:_flush():79] Loading settings from C:\Users\imane\.config\wandb\settings
+2024-09-30 00:22:28,686 INFO    MainThread:15740 [wandb_setup.py:_flush():79] Loading settings from C:\Users\imane\OneDrive\Documents\dynamic_pricing\wandb\settings
+2024-09-30 00:22:28,686 INFO    MainThread:15740 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2024-09-30 00:22:28,686 INFO    MainThread:15740 [wandb_setup.py:_flush():79] Applying setup settings: {'mode': None, '_disable_service': None}
+2024-09-30 00:22:28,686 INFO    MainThread:15740 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program_relpath': 'OneDrive\\Documents\\dynamic_pricing\\src\\main.py', 'program_abspath': 'c:\\Users\\imane\\OneDrive\\Documents\\dynamic_pricing\\src\\main.py', 'program': 'c:\\Users\\imane\\OneDrive\\Documents\\dynamic_pricing\\src\\main.py'}
+2024-09-30 00:22:28,686 INFO    MainThread:15740 [wandb_setup.py:_flush():79] Applying login settings: {}
+2024-09-30 00:22:28,686 INFO    MainThread:15740 [wandb_init.py:_log_setup():532] Logging user logs to C:\Users\imane\OneDrive\Documents\dynamic_pricing\wandb\run-20240930_002228-dxizsmyr\logs\debug.log
+2024-09-30 00:22:28,686 INFO    MainThread:15740 [wandb_init.py:_log_setup():533] Logging internal logs to C:\Users\imane\OneDrive\Documents\dynamic_pricing\wandb\run-20240930_002228-dxizsmyr\logs\debug-internal.log
+2024-09-30 00:22:28,686 INFO    MainThread:15740 [wandb_init.py:init():616] calling init triggers
+2024-09-30 00:22:28,686 INFO    MainThread:15740 [wandb_init.py:init():623] wandb.init called with sweep_config: {}
+config: {'dataset': 'Dynamic Pricing Dataset', 'model': 'Random Forest Regressor', 'test_size': 0.2, 'random_state': 42}
+2024-09-30 00:22:28,686 INFO    MainThread:15740 [wandb_init.py:init():666] starting backend
+2024-09-30 00:22:28,686 INFO    MainThread:15740 [wandb_init.py:init():670] sending inform_init request
+2024-09-30 00:22:28,704 INFO    MainThread:15740 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=spawn, using: spawn
+2024-09-30 00:22:28,705 INFO    MainThread:15740 [wandb_init.py:init():683] backend started and connected
+2024-09-30 00:22:28,712 INFO    MainThread:15740 [wandb_init.py:init():778] updated telemetry
+2024-09-30 00:22:28,714 INFO    MainThread:15740 [wandb_init.py:init():811] communicating run to backend with 90.0 second timeout
+2024-09-30 00:22:29,030 INFO    MainThread:15740 [wandb_init.py:init():862] starting run threads in backend
+2024-09-30 00:22:29,091 INFO    MainThread:15740 [wandb_run.py:_console_start():2464] atexit reg
+2024-09-30 00:22:29,091 INFO    MainThread:15740 [wandb_run.py:_redirect():2312] redirect: wrap_raw
+2024-09-30 00:22:29,092 INFO    MainThread:15740 [wandb_run.py:_redirect():2377] Wrapping output streams.
+2024-09-30 00:22:29,092 INFO    MainThread:15740 [wandb_run.py:_redirect():2402] Redirects installed.
+2024-09-30 00:22:29,093 INFO    MainThread:15740 [wandb_init.py:init():906] run started, returning control to user process
+2024-09-30 00:22:39,548 INFO    MainThread:15740 [wandb_run.py:_finish():2163] finishing run im21/dynamic_pricing/dxizsmyr
+2024-09-30 00:22:39,552 INFO    MainThread:15740 [wandb_run.py:_atexit_cleanup():2427] got exitcode: 0
+2024-09-30 00:22:39,552 INFO    MainThread:15740 [wandb_run.py:_restore():2409] restore
+2024-09-30 00:22:39,552 INFO    MainThread:15740 [wandb_run.py:_restore():2415] restore done
+2024-09-30 00:22:41,480 INFO    MainThread:15740 [wandb_run.py:_footer_history_summary_info():4042] rendering history
+2024-09-30 00:22:41,480 INFO    MainThread:15740 [wandb_run.py:_footer_history_summary_info():4074] rendering summary
+2024-09-30 00:22:41,480 INFO    MainThread:15740 [wandb_run.py:_footer_sync_info():4001] logging synced files

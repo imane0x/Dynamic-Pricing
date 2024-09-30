@@ -1,0 +1,21 @@
+{"time":"2024-09-29T23:57:59.7539221+01:00","level":"INFO","msg":"using version","core version":"0.18.2"}
+{"time":"2024-09-29T23:57:59.7539221+01:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\imane\\OneDrive\\Documents\\dynamic_pricing\\wandb\\run-20240929_235759-bk9wlmt3\\logs\\debug-core.log"}
+{"time":"2024-09-29T23:57:59.7549824+01:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-09-29T23:57:59.7660695+01:00","level":"INFO","msg":"created new stream","id":"bk9wlmt3"}
+{"time":"2024-09-29T23:57:59.7671028+01:00","level":"INFO","msg":"stream: started","id":"bk9wlmt3"}
+{"time":"2024-09-29T23:57:59.7671028+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"bk9wlmt3"}}
+{"time":"2024-09-29T23:57:59.7671028+01:00","level":"INFO","msg":"sender: started","stream_id":{"value":"bk9wlmt3"}}
+{"time":"2024-09-29T23:57:59.7671028+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"bk9wlmt3"}}
+{"time":"2024-09-29T23:58:00.2156644+01:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-09-29T23:58:00.216901+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-09-29T23:58:12.0066364+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-09-29T23:58:12.0066364+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-09-29T23:58:12.1684202+01:00","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2024-09-29T23:58:12.1684202+01:00","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2024-09-29T23:58:12.1684202+01:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2024-09-29T23:58:12.6355438+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-09-29T23:58:14.027736+01:00","level":"INFO","msg":"stream: closing","id":"bk9wlmt3"}
+{"time":"2024-09-29T23:58:14.027736+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"bk9wlmt3"}}
+{"time":"2024-09-29T23:58:14.027736+01:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"bk9wlmt3"}}
+{"time":"2024-09-29T23:58:14.027736+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"bk9wlmt3"}}
+{"time":"2024-09-29T23:58:14.027736+01:00","level":"INFO","msg":"stream: closed","id":"bk9wlmt3"}

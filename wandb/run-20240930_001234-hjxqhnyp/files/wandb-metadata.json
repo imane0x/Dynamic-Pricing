@@ -1,0 +1,31 @@
+{
+  "os": "Windows-11-10.0.22631-SP0",
+  "python": "3.12.6",
+  "startedAt": "2024-09-29T23:12:34.557217Z",
+  "program": "c:\\Users\\imane\\OneDrive\\Documents\\dynamic_pricing\\src\\main.py",
+  "codePath": "OneDrive\\Documents\\dynamic_pricing\\src\\main.py",
+  "git": {
+    "remote": "https://github.com/imane0101010/Predictive-Maintenance-.git"
+  },
+  "email": "imaneouada2002@gmail.com",
+  "root": "C:\\Users\\imane\\OneDrive\\Documents\\dynamic_pricing",
+  "host": "Asus",
+  "username": "imane",
+  "executable": "C:\\Users\\imane\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "codePathLocal": "src\\main.py",
+  "cpu_count": 8,
+  "cpu_count_logical": 16,
+  "disk": {
+    "/": {
+      "total": "998233149440",
+      "used": "773955088384"
+    }
+  },
+  "memory": {
+    "total": "33737932800"
+  },
+  "cpu": {
+    "count": 8,
+    "countLogical": 16
+  }
+}

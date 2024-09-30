@@ -1,0 +1,21 @@
+{"time":"2024-09-30T00:35:16.1694049+01:00","level":"INFO","msg":"using version","core version":"0.18.2"}
+{"time":"2024-09-30T00:35:16.1694049+01:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\imane\\OneDrive\\Documents\\dynamic_pricing\\wandb\\run-20240930_003516-ejpca3e0\\logs\\debug-core.log"}
+{"time":"2024-09-30T00:35:16.170473+01:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-09-30T00:35:16.1816284+01:00","level":"INFO","msg":"created new stream","id":"ejpca3e0"}
+{"time":"2024-09-30T00:35:16.1817789+01:00","level":"INFO","msg":"stream: started","id":"ejpca3e0"}
+{"time":"2024-09-30T00:35:16.1817789+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"ejpca3e0"}}
+{"time":"2024-09-30T00:35:16.1817789+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ejpca3e0"}}
+{"time":"2024-09-30T00:35:16.182304+01:00","level":"INFO","msg":"sender: started","stream_id":{"value":"ejpca3e0"}}
+{"time":"2024-09-30T00:35:16.4828395+01:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-09-30T00:35:16.4839201+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-09-30T00:35:16.593045+01:00","level":"INFO","msg":"stream: closing","id":"ejpca3e0"}
+{"time":"2024-09-30T00:35:16.593045+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-09-30T00:35:16.593045+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-09-30T00:35:17.0412959+01:00","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2024-09-30T00:35:17.0412959+01:00","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2024-09-30T00:35:17.0412959+01:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2024-09-30T00:35:17.4890786+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-09-30T00:35:17.8772066+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"ejpca3e0"}}
+{"time":"2024-09-30T00:35:17.8772066+01:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"ejpca3e0"}}
+{"time":"2024-09-30T00:35:17.8772066+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"ejpca3e0"}}
+{"time":"2024-09-30T00:35:17.8772066+01:00","level":"INFO","msg":"stream: closed","id":"ejpca3e0"}
