@@ -24,7 +24,7 @@ A project to implement dynamic pricing strategies for ride-sharing platforms usi
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/imane0x/Dynamic-Pricing
    ```
 2. Install dependencies:
    ```bash
