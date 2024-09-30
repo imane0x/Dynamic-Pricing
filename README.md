@@ -48,6 +48,6 @@ Uses Grid Search for tuning the Random Forest Regressor.
 
 ## Weights & Biases
 
-Integrated with wandb for experiment tracking. Set up your wandb account and API key.
+Integrated with wandb for experiment tracking.
 
 ---
