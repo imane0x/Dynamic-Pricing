@@ -20,44 +20,55 @@ def estimate_elasticity(data, feature_list, target_variable):
         tuple: Estimated elasticity and model summary.
     """
     
-    # Split data into predictors (X) and target (y)
+   
     X = data[feature_list]
     y = data[target_variable]
 
-    # Identify categorical features for preprocessing
-    categorical_features = [feature for feature in feature_list if data[feature].dtype == 'object' or pd.api.types.is_categorical_dtype(data[feature])]
+    # Split the dataset into training and test sets first to avoid data leakage.
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    
+    # Identify which features are categorical vs. numeric in the training data
+    categorical_features = [feature for feature in feature_list 
+                            if X_train[feature].dtype == 'object' or pd.api.types.is_categorical_dtype(X_train[feature])]
+    numeric_features = [feature for feature in feature_list if feature not in categorical_features]
 
-    # Preprocessing pipeline
+    # Define a transformer to log-transform numeric features (adding 1 to avoid log(0))
+    log_transformer = FunctionTransformer(lambda x: np.log(x + 1))
+    
+    # Build a preprocessor pipeline for the training data:
+    # - Log-transforms then scales numeric features.
+    # - One-hot encodes categorical features.
     preprocessor = ColumnTransformer(
         transformers=[
+            ('num', Pipeline(steps=[
+                ('log', log_transformer),
+                ('scaler', StandardScaler())
+            ]), numeric_features),
             ('cat', OneHotEncoder(drop='first'), categorical_features)
-        ],
-        remainder='passthrough'  # Keep other numerical features as they are
+        ]
     )
-
-    pipeline = Pipeline(steps=[
-        ('preprocessor', preprocessor),
-        ('scaler', StandardScaler())  # Optional scaling
-    ])
-   
-
-    # Transform the features
-    X_processed = pipeline.fit_transform(X)
-    X_processed = sm.add_constant(X_processed)
-
-    # Split the data into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(X_processed, y, test_size=0.2, random_state=42)
-
-    # Fit the OLS regression model
-    model = sm.OLS(y_train, X_train).fit()
     
-    # Print the model summary
-    print(model.summary())
+    # Fit the preprocessor on the training data and transform the training set
+    X_train_transformed = preprocessor.fit_transform(X_train)
+    
+    # Log-transform the target variable for the training data
+    y_train_log = np.log(y_train + 1)
+    
+    # Add a constant term for the intercept to the training design matrix
+    X_train_design = sm.add_constant(X_train_transformed)
 
-    # Estimating elasticity based on the 'Historical_Cost_of_Ride' index
-    # Adjust the index if the column order changes after preprocessing
-    elasticity_index = list(X.columns).index('Historical_Cost_of_Ride')
-    elasticity = model.params[elasticity_index]
+    # Fit the OLS regression model on the log–log data from the training set
+    model = sm.OLS(y_train_log, X_train_design).fit()
+    print(model.summary())
+    
+    # Extract the elasticity coefficient for 'Historical_Cost_of_Ride'
+    if 'Historical_Cost_of_Ride' in numeric_features:
+        # Because we added a constant at the beginning, the index is shifted by 1
+        coef_index = numeric_features.index('Historical_Cost_of_Ride') + 1
+        elasticity = model.params[coef_index]
+    else:
+        elasticity = None
+        print("Error: 'Historical_Cost_of_Ride' is not among the numeric features.")
     
     return elasticity, model.summary()
 
